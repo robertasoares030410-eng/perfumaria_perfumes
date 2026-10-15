@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2ebe3; /* Cor de fundo suave (bege claro) */
+  font-family: 'Montserrat', sans-serif; /* Ou a fonte do seu projeto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* O Cartão Principal (Card) */
+.product-card {
+  display: flex;
+  width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Divisão da Imagem */
+.product-image {
+  flex: 1;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  display: block;
+}
+
+/* Divisão do Conteúdo de Texto */
+.product-content {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Categoria (pequena e espaçada) */
+.category {
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: #6c7289;
+  margin-bottom: 15px;
+}
+
+/* Título */
+.product-content h1 {
+  font-size: 28px;
+  color: #1c232b;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+/* Descrição */
+.description {
+  font-size: 14px;
+  color: #6c7289;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Preços */
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.current-price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #3d8168; /* Tom de verde elegante */
+}
+
+.old-price {
+  font-size: 14px;
+  color: #6c7289;
+  text-decoration: line-through;
+}
+
+/* Botão de Carrinho */
+.btn-cart {
+  background-color: #3d8168;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-cart:hover {
+  background-color: #1a4032; /* Tom mais escuro no hover */
+}
